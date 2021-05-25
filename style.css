@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap");
 .encabezado {
   background-image: url("imagenes/hojas.jpg");
   background-size: fixed;
@@ -81,19 +82,193 @@
   width: 38px;
 }
 
-.pieDePagina__formulario {
-  background-color: #d6ffd6;
-}
-
 .secciones__delivery--imagenes {
   display: flex;
   flex-direction: column;
+}
+
+.secciones__quienesSomos,
+.secciones__contacto,
+.secciones__productos,
+footer {
+  margin: 0px 20px 20px 20px;
+}
+
+.secciones__productos {
+  margin-bottom: 90px;
 }
 
 .secciones__quienesSomos--cajaVideo {
   display: flex;
   justify-content: center;
   margin: 0px 20px 20px 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img,
+video,
+textarea {
+  width: 100%;
+}
+
+container-fluid {
+  display: flex;
+  justify-content: center;
+}
+
+.secciones__contacto--logoFacebook {
+  margin-right: 3px;
+}
+
+.secciones__contacto--lista {
+  list-style: none;
+  padding: 0;
+  margin-left: 2em;
+}
+
+.secciones__contacto--lista li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.secciones__contacto--lista a {
+  text-decoration: none;
+}
+
+.secciones__contacto--logoWhatsApp {
+  display: inline;
+}
+
+.secciones__contacto--logo1 img {
+  width: 38px;
+}
+
+.secciones__contacto--logoInstagram img {
+  width: 38px;
+}
+
+.secciones__contacto--logoFacebook {
+  display: inline;
+}
+
+.secciones__contacto--logoFacebook img {
+  width: 38px;
+}
+
+div.productos:hover,
+.secciones__productos--imagenes:hover {
+  transform: scale(1, 1.1);
+}
+
+h3 {
+  margin: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+h1,
+.secciones__delivery--titulo {
+  font-style: italic;
+  width: 220px;
+  background-image: linear-gradient(45deg, #1da51d, white, #1da51d 200px);
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.secciones__productos--imagenes,
+.grilla__imagenes .secciones__delivery--grilla {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.secciones__productos--nombre {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0px 20px 5px;
+}
+
+.secciones__productos--grilla {
+  grid-template-columns: 1fr;
+  grid-auto-rows: 250px;
+  grid-gap: 65px;
+}
+
+.secciones__quienesSomos--cajaVideo--video {
+  margin-top: 20px;
+  background-color: yellowgreen;
+  padding: 15px;
+  border-radius: 10%;
+}
+
+.secciones__quienesSomos--titulo,
+.secciones__productos--titulo,
+.secciones__delivery--titulo,
+.secciones__contacto--titulo,
+.piedepagina__titulo {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px 20px 0px;
+  font-size: 30px;
+}
+
+.secciones__contacto--alineacion,
+.secciones__quienesSomos--alineacion,
+.secciones__productos--alineacion,
+.secciones__delivery--alineacion {
+  display: flex;
+  justify-content: center;
+}
+
+.pieDePagina {
+  display: flex;
+  justify-content: center;
+}
+
+.pieDePagina__formulario {
+  border: solid;
+  padding: 20px;
+  background-color: #d6ffd6;
+}
+
+.pieDePagina__titulo--secundario {
+  margin: 0px;
+}
+
+.secciones__quienesSomos--titulo {
+  font-size: 26px;
+}
+
+.secciones__quienesSomos--descripcion {
+  text-align: justify;
+}
+
+.secciones__delivery {
+  margin: 0px 20px 20px 20px;
+}
+
+/* MOBILE */
+.carouselMobile {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.carouselName {
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.piedepagina__titulo-secundario {
+  text-align: left;
 }
 
 .secciones__contacto--logo1 {
@@ -188,6 +363,13 @@ a.secciones__contacto--logoF {
 }
 @media screen and (min-width: 993px) {
   .encabezado {
+    justify-content: flex-start;
+  }
+
+  .secciones__contacto--alineacion,
+.secciones__quienesSomos--alineacion,
+.secciones__productos--alineacion,
+.secciones__delivery--alineacion {
     justify-content: flex-start;
   }
 
