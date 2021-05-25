@@ -1,0 +1,232 @@
+.encabezado {
+  background-image: url("imagenes/hojas.jpg");
+  background-size: fixed;
+  background-position: center;
+  width: 100%;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.encabezado .encabezado__logo {
+  width: 190px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.navbar {
+  background-color: greenyellow;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  border-right: 1px solid black;
+  padding-right: 20px;
+  margin: 0px;
+  border-right: none;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  background-color: greenyellow;
+  border: none;
+}
+
+.secciones__delivery--grilla {
+  grid-template-columns: 1fr;
+  grid-gap: 65px;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes titilar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animacion {
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: titilar;
+}
+
+.secciones__contacto--publicidad {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 70px;
+  border: solid;
+  padding: 5px;
+  border-style: double;
+  border-radius: 10%;
+  font-weight: bold;
+  text-align: center;
+  width: 8rem;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.contacto__logoInstagram img {
+  width: 38px;
+}
+
+.pieDePagina__formulario {
+  background-color: #d6ffd6;
+}
+
+.secciones__delivery--imagenes {
+  display: flex;
+  flex-direction: column;
+}
+
+.secciones__quienesSomos--cajaVideo {
+  display: flex;
+  justify-content: center;
+  margin: 0px 20px 20px 20px;
+}
+
+.secciones__contacto--logo1 {
+  width: 38px;
+  margin-right: 10px;
+}
+
+.secciones__contacto--logo2 {
+  width: 38px;
+  margin-right: 10px;
+}
+
+.secciones__contacto--logo3 {
+  width: 38px;
+  margin-right: 10px;
+}
+
+a.secciones__contacto--logoW {
+  background-color: #d6ffd6;
+}
+
+a.secciones__contacto--logoI {
+  background-color: #d6ffd6;
+}
+
+a.secciones__contacto--logoF {
+  background-color: #d6ffd6;
+}
+
+@media screen and (min-width: 576px) {
+  .barraInicio .navBar {
+    flex-direction: row;
+  }
+
+  .secciones__quienesSomos--cajaVideo--video {
+    width: 400px;
+  }
+
+  .secciones__delivery--grilla {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+    min-height: 236px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  h3.secciones__delivery--zona {
+    font-size: 1em;
+    margin: 20px 0px;
+  }
+
+  .barraInicio li {
+    border-right: 1px solid black;
+  }
+
+  .nombreEncabezados {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 20px 0px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .cajaVideo {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .secciones__productos--grilla {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+    margin: 0px 20px;
+  }
+
+  .secciones__quienesSomos--cajaVideo--video {
+    width: 400px;
+  }
+
+  .nav-link {
+    font-weight: bold;
+    border-right: none;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.24rem;
+    padding-left: 0.2rem;
+  }
+}
+@media screen and (min-width: 993px) {
+  .encabezado {
+    justify-content: flex-start;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.24rem;
+    padding-left: 0.2rem;
+  }
+
+  .nav-link {
+    font-weight: bold;
+    border-right: 1px solid black;
+  }
+
+  .secciones__productos--grilla {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+  }
+
+  .barraInicio li a {
+    text-align: center;
+  }
+
+  .cajaVideo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nombreEncabezados {
+    justify-content: flex-start;
+    margin: 30px 0px 20px 0px;
+  }
+
+  .secciones__quienesSomos--titulo-secundario {
+    text-align: left;
+  }
+
+  .secciones__quienesSomos--cajaVideo--video {
+    width: 400px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

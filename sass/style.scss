@@ -1,0 +1,152 @@
+@import 'encabezado';
+@import 'delivery';
+@import 'publicidad';
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.contacto__logoInstagram img {
+  width: 38px;
+}
+
+.pieDePagina__formulario {
+  background-color: rgb(214, 255, 214);
+}
+
+.secciones__delivery--imagenes {
+  display: flex;
+  flex-direction: column;
+}
+
+.secciones__quienesSomos--cajaVideo {
+  display: flex;
+  justify-content: center;
+  margin: 0px 20px 20px 20px;
+}
+
+@for $i from 1 through 3 {
+  .secciones__contacto--logo#{$i} {
+    width: 38px;
+    margin-right: 10px;
+  }
+}
+
+$redes: (
+  logoW: rgb(214, 255, 214),
+  logoI: rgb(214, 255, 214),
+  logoF: rgb(214, 255, 214),
+);
+
+@each $logo, $color in $redes {
+  a.secciones__contacto--#{$logo} {
+    background-color: $color;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .barraInicio .navBar {
+    flex-direction: row;
+  }
+
+  .secciones__quienesSomos--cajaVideo--video {
+    width: 400px;
+  }
+
+  .secciones__delivery--grilla {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+    min-height: 236px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  h3.secciones__delivery--zona {
+    font-size: 1em;
+    margin: 20px 0px;
+  }
+
+  .barraInicio li {
+    border-right: 1px solid black;
+  }
+
+  .nombreEncabezados {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 20px 0px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .cajaVideo {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .secciones__productos--grilla {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+    margin: 0px 20px;
+  }
+
+  .secciones__quienesSomos--cajaVideo--video {
+    width: 400px;
+  }
+
+  .nav-link {
+    font-weight: bold;
+    border-right: none;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.24rem;
+    padding-left: 0.2rem;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .encabezado {
+    justify-content: flex-start;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.24rem;
+    padding-left: 0.2rem;
+  }
+
+  .nav-link {
+    font-weight: bold;
+    border-right: 1px solid black;
+  }
+  .secciones__productos--grilla {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+  }
+
+  .barraInicio li a {
+    text-align: center;
+  }
+
+  .cajaVideo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nombreEncabezados {
+    justify-content: flex-start;
+    margin: 30px 0px 20px 0px;
+  }
+
+  .secciones__quienesSomos--titulo-secundario {
+    text-align: left;
+  }
+
+  .secciones__quienesSomos--cajaVideo--video {
+    width: 400px;
+  }
+}
