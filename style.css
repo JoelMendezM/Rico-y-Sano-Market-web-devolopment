@@ -73,6 +73,68 @@
   width: 8rem;
 }
 
+.container2 {
+  width: 90%;
+  margin: 1.5rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  margin: auto;
+}
+
+.item {
+  background-color: #fff;
+  transition: all 300ms;
+  position: relative;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75);
+  border-radius: 10%;
+}
+
+.item-text__nombres {
+  margin: 5px;
+}
+
+.item::after {
+  content: "";
+  background-color: rgba(179, 229, 252, 0.1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 300ms;
+  opacity: 0;
+}
+
+.item:hover:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item-img {
+  max-width: 100%;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  display: block;
+}
+
+@media screen and (min-width: 590px) {
+  .container2 {
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+  }
+}
+@media screen and (min-width: 993px) {
+  .container2 {
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+  }
+}
 .container {
   margin: 0;
   padding: 0;
@@ -95,7 +157,7 @@ footer {
 }
 
 .secciones__productos {
-  margin-bottom: 90px;
+  margin-bottom: 30px;
 }
 
 .secciones__quienesSomos--cajaVideo {
@@ -200,6 +262,10 @@ h1,
   grid-template-columns: 1fr;
   grid-auto-rows: 250px;
   grid-gap: 65px;
+}
+
+.secciones__productos--enlaceProductos {
+  margin-left: 20px;
 }
 
 .secciones__quienesSomos--cajaVideo--video {
@@ -408,6 +474,10 @@ a.secciones__contacto--logoF {
 
   .secciones__quienesSomos--cajaVideo--video {
     width: 400px;
+  }
+
+  .secciones__productos {
+    margin-bottom: 80px;
   }
 }
 
