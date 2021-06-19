@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap");
 .encabezado {
-  background-image: url('imagenes/hojas.jpg');
+  background-image: url("imagenes/hojas.jpg");
   background-size: fixed;
   background-position: center;
   width: 100%;
@@ -95,7 +95,7 @@
 }
 
 .item::after {
-  content: '';
+  content: "";
   background-color: rgba(179, 229, 252, 0.1);
   width: 100%;
   height: 100%;
@@ -136,7 +136,7 @@
   }
 }
 .pieDePagina__formulario {
-  background-image: url('imagenes/hojas.jpg');
+  background-image: url("imagenes/hojas.jpg");
 }
 
 .pieDePagina__formulario--datos--nombre,
@@ -378,6 +378,15 @@ h1,
   margin: 0px 20px 20px 20px;
 }
 
+::-webkit-scrollbar {
+  background-color: #d0ff89;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: green;
+  border-radius: 10px;
+}
+
 /* MOBILE */
 .carouselMobile {
   width: 50%;
@@ -490,9 +499,9 @@ a.secciones__contacto--logoF {
   }
 
   .secciones__contacto--alineacion,
-  .secciones__quienesSomos--alineacion,
-  .secciones__productos--alineacion,
-  .secciones__delivery--alineacion {
+.secciones__quienesSomos--alineacion,
+.secciones__productos--alineacion,
+.secciones__delivery--alineacion {
     justify-content: flex-start;
   }
 
