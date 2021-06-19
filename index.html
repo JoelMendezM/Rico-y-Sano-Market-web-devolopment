@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="estilos.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="imagenes/logo.jpg" />
 
     <meta
       name="title"
@@ -430,26 +431,18 @@ precio"
       <hr />
 
       <form class="pieDePagina__formulario">
-        <h3 class="pieDePagina__titulo--secundario">Envianos tu comentario:</h3>
+        <div class="pieDePagina__caja--titulo---secundario">
+          <h3 class="pieDePagina__titulo--secundario">
+            Envianos tu comentario:
+          </h3>
+        </div>
         <div class="pieDePagina__formulario--datos">
-          <div>Nombre:</div>
-          <input
-            class="pieDePagina__formulario--datos--nombre"
-            type="text"
-            required
-          />
-          <div>Apellido:</div>
-          <input
-            class="pieDePagina__formulario--datos--apellido"
-            type="text"
-            required
-          />
-          <div>E-mail:</div>
-          <input
-            class="pieDePagina__formulario--datos--email"
-            type="email"
-            required
-          />
+          <div class="pieDePagina__formulario--datos--nombre">Nombre:</div>
+          <input class="pieDePagina__input" type="text" required />
+          <div class="pieDePagina__formulario--datos--apellido">Apellido:</div>
+          <input class="pieDePagina__input" type="text" required />
+          <div class="pieDePagina__formulario--datos--email">E-mail:</div>
+          <input class="pieDePagina__input" type="email" required />
           <select class="pieDePagina__formulario--datos--civil" name="Edocivil">
             <option value="S">Soltero/a</option>
             <option value="C">Casado/a</option>

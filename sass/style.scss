@@ -3,6 +3,7 @@
 @import 'publicidad';
 @import 'variables';
 @import 'galeria';
+@import 'formulario';
 
 .container {
   margin: 0;
@@ -227,6 +228,18 @@ $redes: (
   }
 }
 
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: red;
+}
+
+::-webkit-scroll {
+  background-color: red;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: royalblue;
+}
 @media screen and (min-width: 576px) {
   .barraInicio .navBar {
     flex-direction: row;

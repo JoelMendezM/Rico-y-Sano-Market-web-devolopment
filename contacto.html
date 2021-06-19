@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="estilos.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="imagenes/logo.jpg" />
     <title>Document</title>
     <meta
       name="title"
@@ -145,6 +146,61 @@
         </li>
       </ul>
     </div>
+
+    <footer>
+      <div class="pieDePagina">
+        <h1 class="pieDePagina__titulo">FORMULARIO DE CONTACTO</h1>
+      </div>
+      <hr />
+
+      <form class="pieDePagina__formulario">
+        <div class="pieDePagina__caja--titulo---secundario">
+          <h3 class="pieDePagina__titulo--secundario">
+            Envianos tu comentario:
+          </h3>
+        </div>
+        <div class="pieDePagina__formulario--datos">
+          <div class="pieDePagina__formulario--datos--nombre">Nombre:</div>
+          <input class="pieDePagina__input" type="text" required />
+          <div class="pieDePagina__formulario--datos--apellido">Apellido:</div>
+          <input class="pieDePagina__input" type="text" required />
+          <div class="pieDePagina__formulario--datos--email">E-mail:</div>
+          <input class="pieDePagina__input" type="email" required />
+          <select class="pieDePagina__formulario--datos--civil" name="Edocivil">
+            <option value="S">Soltero/a</option>
+            <option value="C">Casado/a</option>
+            <option value="D">Divorciado/a</option>
+            <option value="D">Viudo/a</option>
+          </select>
+        </div>
+
+        <div class="pieDePagina__formulario--notificaciones">
+          Desea recibir el notificaciones de ofertas imperdibles?
+          <label for=""><input type="checkbox" /></label>
+        </div>
+        <textarea
+          class="pieDePagina__formulario--comentarios"
+          name=""
+          id=""
+          cols="50"
+          rows="10"
+          placeholder="escribe tu comentario"
+        ></textarea>
+
+        <div class="pieDePagina__formulario--botones">
+          <input
+            class="pieDePagina__formulario--botones--reset"
+            type="reset"
+            value="Limpiar formulario"
+          />
+          <input
+            class="pieDePagina__formulario--botones--send"
+            type="submit"
+            value="Enviar formulario"
+          />
+        </div>
+      </form>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"

@@ -1,0 +1,56 @@
+.pieDePagina__formulario {
+  background-image: url('imagenes/hojas.jpg');
+}
+
+.pieDePagina__formulario--datos--nombre,
+.pieDePagina__formulario--datos--apellido,
+.pieDePagina__formulario--datos--email {
+  font-weight: bold;
+  background-color: greenyellow;
+  width: 4.7rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  border-style: ridge;
+  border-radius: 8%;
+  border-color: black;
+}
+
+.pieDePagina__titulo--secundario {
+  background-color: greenyellow;
+  font-weight: bold;
+  width: 20rem;
+  border-style: ridge;
+  border-radius: 8%;
+  border-color: black;
+}
+
+.pieDePagina__formulario--datos--civil {
+  font-weight: bold;
+  background-color: greenyellow;
+}
+
+.pieDePagina__formulario--botones--reset,
+.pieDePagina__formulario--botones--send {
+  font-weight: bold;
+  background-color: greenyellow;
+  width: 10rem;
+}
+
+.pieDePagina__caja--titulo---secundario {
+  display: flex;
+  justify-content: center;
+}
+
+.pieDePagina__input {
+  border-block-color: black;
+}
+
+.pieDePagina__formulario--notificaciones {
+  background-color: greenyellow;
+  margin-top: 0.5rem;
+  width: 25rem;
+}
+
+.pieDePagina__formulario--comentarios {
+  border-style: inset;
+}
